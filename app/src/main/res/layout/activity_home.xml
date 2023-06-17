@@ -6,4 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <Button
+        android:id="@+id/users_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Users"
+        app:layout_constraintBottom_toTopOf="@+id/genearte_random_users_btn"
+        app:layout_constraintEnd_toEndOf="@+id/genearte_random_users_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/genearte_random_users_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/genearte_random_users_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Random Users"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/users_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
