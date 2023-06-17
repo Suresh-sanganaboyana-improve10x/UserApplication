@@ -16,5 +16,6 @@ public class GeneratorRandomUsersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityGeneratorRandomUsersBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().setTitle("Random Users");
     }
 }

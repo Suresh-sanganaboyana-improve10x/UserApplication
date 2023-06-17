@@ -2,9 +2,11 @@ package com.example.userapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.userapplication.databinding.ActivityHomeBinding;
+import com.example.userapplication.users.GeneratorRandomUsersActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -16,5 +18,13 @@ public class HomeActivity extends AppCompatActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().setTitle("Home");
+        handleGeneratorRandomUsersBtn();
+    }
+
+    private void handleGeneratorRandomUsersBtn() {
+        binding.genearteRandomUsersBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, GeneratorRandomUsersActivity.class);
+            startActivity(intent);
+        });
     }
 }
